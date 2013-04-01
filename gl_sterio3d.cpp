@@ -588,38 +588,6 @@ cleanup:
 	return;
 
 }
-#if 0
-void create_texture(void)
-{
-    const unsigned int on = 0xfff0f030;
-    const unsigned int off = 0xff0f0fff;
-    const unsigned int pixels[] =
-    {
-            on, off, on, off, on, off, on, off,
-            off, on, off, on, off, on, off, on,
-            on, off, on, off, on, off, on, off,
-            off, on, off, on, off, on, off, on,
-            on, off, on, off, on, off, on, off,
-            off, on, off, on, off, on, off, on,
-            on, off, on, off, on, off, on, off,
-            off, on, off, on, off, on, off, on,
-    };
-
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 8, 8, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixels);
-	
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-#if 0 
-    glTexParameterx(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    glTexParameterx(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-    glTexEnvx(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
-#endif
-}
-#endif
 
 /*!****************************************************************************
  @Function		main

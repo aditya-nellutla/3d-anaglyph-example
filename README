@@ -14,3 +14,5 @@ Run the following to build and install the binary on to the X-WINDOW SYSTEM plat
 -  make XORG_BUILD=1 && make install
  
 Note:- You need to put on Red-Cyan glasses to have 3D effect
+
+Output: You should obaserve 9 - rotating cubes and one poping out of screen

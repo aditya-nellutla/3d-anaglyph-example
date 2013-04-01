@@ -1,5 +1,7 @@
 .PHONY: all install uninstall clean
 
+#Set the paths correctly before you begin.
+
 TGTFS_PATH:=/path/to/NFS/Flesystem
 GSDK_ROOT:=/home1/aditya/linux/Graphics_SDK_4_08_00_02
 CROSS_COMPILE:=arm-arago-linux-gnueabi-

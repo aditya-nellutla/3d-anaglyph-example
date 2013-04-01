@@ -1,0 +1,16 @@
+Build and Install:
+=================
+1) Set the following Variables in Makefile
+	a) GSDK_ROOT = /path/to/graphics SDK root
+        b) TGTFS_PATH = /path/to/NFS/Flesystem
+	c) CROSS_COMPILE= CROSS_COMPILE_PREFIX
+
+Run the following to build install the binary on to the NULL WINDOW SYSTEM platform -
+
+-  make && make install
+
+Run the following to build and install the binary on to the X-WINDOW SYSTEM platform -
+
+-  make XORG_BUILD=1 && make install
+ 
+Note:- You need to put on Red-Cyan glasses to have 3D effect
